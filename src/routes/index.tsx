@@ -151,11 +151,11 @@ export default function Router() {
         { path: 'payment', element: <Payment /> },
         { path: '500', element: <Page500 /> },
         { path: '404', element: <NotFound /> },
-        { path: '*', element: <Navigate to="/404" replace /> }
+        { path: '*', element: <Navigate to="/dashboard" replace /> }
       ]
     },
     {
-      path: '/',
+      path: '/landing',
       element: <MainLayout />,
       children: [
         { path: '/', element: <LandingPage /> },
